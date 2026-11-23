@@ -1,0 +1,12 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource prefix="/icons">
+    <file>icons/icono-16.png</file>
+    <file>icons/icono-32.png</file>
+    <file>icons/icono-48.png</file>
+    <file>icons/icono-128.png</file>
+    <file>icons/icono-256.png</file>
+    <file>icons/logo-128.png</file>
+    <file>icons/logo-sinfondo.png</file>
+</qresource>
+</RCC>
