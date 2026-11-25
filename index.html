@@ -85,17 +85,23 @@ footer button:hover{background:#f4edef;color:#5a192c}
 footer button:disabled{opacity:.2;background:transparent}
 @media print{footer{display:none}}
 </style>
-</head>
+<style id="cover-topics-style">
+.cover-topics .split{grid-template-columns:.85fr 1.55fr;gap:5vw}
+.cover-topics h1{font-size:clamp(44px,5vw,75px)}
+.cover-topics .lead{font-size:20px}
+.topics-heading{font-size:20px;color:#76263c;margin-bottom:18px}
+.topics-list{display:grid;grid-template-columns:1fr 1fr;gap:0 25px;margin:0}
+.topics-list>div{padding:11px 0;border-top:1px solid #e2d9dd}
+.topics-list dt{font-size:15px;font-weight:650;color:#171717}
+.topics-list dd{font-size:13px;line-height:1.45;color:#61575d;margin:5px 0 0}
+@media(max-width:900px){.cover-topics .split{grid-template-columns:1fr}.cover-topics h1{font-size:50px}.topics-list{gap:0 18px}.cover-topics .lead{font-size:17px}}
+@media(max-width:480px){.topics-list{grid-template-columns:1fr}}
+</style><style>.topics-slide .topics-list{grid-template-columns:repeat(3,1fr);gap:0 35px}.topics-slide .topics-list>div{padding:15px 0}.topics-slide .topics-list dt{font-size:18px}.topics-slide .topics-list dd{font-size:15px}@media(max-width:800px){.topics-slide .topics-list{grid-template-columns:1fr 1fr;gap:0 20px}}@media(max-width:480px){.topics-slide .topics-list{grid-template-columns:1fr}}</style></head>
 <body>
 <header><strong>UNSA <span class="brand-divider">/</span> OmniStream Deck</strong></header>
 <main aria-label="Presentación de diez diapositivas">
-<section class="slide active" data-title="OmniStream Deck">
-<div class="split"><div><p class="kicker">Universidad Nacional de San Agustín de Arequipa</p><h1>OmniStream<br>Deck</h1><p class="lead">Una consola de efectos, control de volumen por aplicación y eventos de TikTok LIVE.</p><span class="tag">C++17</span><span class="tag">Qt 6</span><span class="tag">Windows Core Audio</span></div><div class="hero-visual"><p class="hero-title">OmniStream Deck en ejecución</p><div class="wave" aria-hidden="true"></div><img src="docs/presentation/biblioteca.png" alt="Captura real de la biblioteca de OmniStream Deck"></div></div>
-</section>
-<section class="slide" data-title="El problema que resuelve">
-<p class="kicker">Un flujo de trabajo para transmisiones</p><h2>Controlar el audio<br>sin perder el ritmo.</h2><p class="lead">Música, efectos y comentarios compiten por la atención durante una transmisión. La aplicación reúne tres acciones en una misma ventana.</p>
-<div class="feature-grid"><div class="feature"><div class="big-number">01</div><h3>Lanzar un efecto</h3><p class="lead">Usar una tarjeta o un atajo global desde otra ventana.</p></div><div class="feature"><div class="big-number">02</div><h3>Dar prioridad al sonido</h3><p class="lead">Reducir el volumen de otras aplicaciones mientras suena el efecto.</p></div><div class="feature"><div class="big-number">03</div><h3>Seguir la interacción</h3><p class="lead">Ver eventos de TikTok LIVE y elegir cuáles se leen en voz alta.</p></div></div>
-</section>
+<section class="slide active" data-title="OmniStream Deck"><div class="split"><div><p class="kicker">Universidad Nacional de San Agustín de Arequipa</p><h1>OmniStream<br>Deck</h1><p class="lead">Efectos de sonido, control de volumen por aplicación y eventos de TikTok LIVE.</p><span class="tag">C++17</span><span class="tag">Qt 6</span><span class="tag">Windows</span></div><div class="hero-visual"><p class="hero-title">OmniStream Deck en ejecución</p><div class="wave" aria-hidden="true"></div><img src="docs/presentation/biblioteca.png" alt="Biblioteca de sonidos de OmniStream Deck"></div></div></section>
+<section class="slide topics-slide" data-title="Temas aplicados"><p class="kicker">Tecnología de Objetos</p><h2>Temas aplicados.</h2><dl class="topics-list"><div><dt>C++ y Qt</dt><dd>Interfaz y controles.</dd></div><div><dt>CMake y Git</dt><dd>Compilación y versiones.</dd></div><div><dt>POO y encapsulación</dt><dd>Audio, atajos y TikTok.</dd></div><div><dt>Herencia y polimorfismo</dt><dd>Canales de audio.</dd></div><div><dt>Punteros inteligentes</dt><dd>Gestión de componentes.</dd></div><div><dt>Lambdas</dt><dd>Botones y atajos.</dd></div><div><dt>Templates y colecciones</dt><dd>Cola de sonidos.</dd></div><div><dt>Hilos y mutex</dt><dd>Procesamiento de la cola.</dd></div><div><dt>Persistencia</dt><dd>Biblioteca y ajustes.</dd></div><div><dt>Excepciones</dt><dd>Cierre del trabajador.</dd></div><div><dt>Observer</dt><dd>Eventos de reproducción.</dd></div><div><dt>Testing</dt><dd>Pruebas de audio y cola.</dd></div><div><dt>MVC</dt><dd>Interfaz y lógica.</dd></div></dl></section>
 <section class="slide" data-title="Biblioteca de sonidos">
 <div class="split wide"><div><p class="kicker">La interfaz en uso</p><h2>Una tarjeta.<br>Un sonido.</h2><p class="lead">Cada efecto conserva su archivo, nombre, categoría, color, volumen y atajo.</p><div class="list"><div><h3>Dos formas de dispararlo</h3><p>Clic en la tarjeta o combinación de teclas global.</p></div><div><h3>Control de los atajos</h3><p>El botón inferior alterna entre Activar atajos y Pausar atajos.</p></div><div><h3>Datos persistentes</h3><p>SQLite guarda la biblioteca. Los archivos de audio se mantienen en su ubicación.</p></div></div></div><figure style="margin:0"><img class="shot" src="docs/presentation/biblioteca.png" alt="Biblioteca real con tarjetas de audio y mezclador"><figcaption class="caption">Captura de la aplicación ejecutándose en Windows. Haz clic para ampliar.</figcaption></figure></div>
 </section>
