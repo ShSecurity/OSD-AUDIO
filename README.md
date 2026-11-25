@@ -16,6 +16,8 @@
 
 OmniStream Deck reúne una biblioteca de efectos, atajos globales y un panel de actividad de TikTok LIVE. Durante una transmisión puedes lanzar un sonido sin cambiar de ventana, reducir temporalmente el volumen de otras aplicaciones y configurar qué eventos se leen en voz alta.
 
+[Ver presentación del proyecto](https://shsecurity.github.io/OSD-AUDIO/)
+
 ## Cómo funciona
 
 ### Del atajo al altavoz
